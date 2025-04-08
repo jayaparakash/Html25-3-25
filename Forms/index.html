@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+        }
+
+        form{
+            width: 500px;
+            /* height: 500px; */
+            border :1px solid lightgray;
+            background-color: whitesmoke;
+            /* text-align: center; */
+            padding: 10px;
+        }
+        input{
+          border: 1px solid blueviolet;
+        }
+
+        input:focus{
+            outline: none;
+            border: 3px solid cadetblue;
+            box-shadow: 5px 5px 5px cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>HTML FORM</h1>
+    </center>
+
+
+    <!-- 
+    form
+
+    physical form
+    url form
+    application form
+    singup
+    login
+    singin
+    
+
+    label
+    input  => id , placeholder , name, size,autofocus, min,maxlength, requried
+      |
+    types 
+    text
+    password
+    email
+    submit,button
+    time,date,month
+    number => min,max,step
+    image
+    color
+    file => accept
+    radio 
+    checkbox
+    select , dropdown
+    range 
+    rest
+    tel
+
+
+    textArea
+    filedset,legend
+    -->
+
+    
+    <form action="https://www.achieversit.com" method="" oninput="x.value=parseInt(a.value)">
+
+        <fieldset>
+            <legend>LoginForm</legend>
+<label for="username">First Name :</label><br><br>
+
+        <!-- text -->
+<input type="text" id="username" placeholder="EnterName" size="20" name="jaswanth" autofocus minlength="2" required maxlength="5">
+<br>
+
+<!-- pass -->
+<label for="">password</label><br>
+<input type="password" placeholder="EnterName">
+<br>
+<label for="">email</label><br>
+<input type="email" placeholder="EnterName">
+
+<br>
+
+<label for="">time</label><br>
+<input type="datetime-local" placeholder="EnterName">
+
+<br>
+
+<label for="">number</label><br>
+<input type="number" placeholder="EnterNumber" > 
+
+<br>
+
+<label for="">number</label><br>
+<input type="image" src="../superman.jpeg"  width="100px" height="100px"> 
+<br>
+
+<label for="">color:</label>
+<input type="color">
+
+<br>
+
+<label for="">color:</label>
+<input type="file" accept="img.png">
+
+<br><br><br><br>
+
+
+<!-- radio  -->
+<label for="">Gender:</label>
+
+<input type="radio" name="Gender" id="" value="male">
+<span>male</span>
+
+<input type="radio" name="Gender" id="" value="female">
+<span>female</span>
+
+<input type="radio" name="Gender" id="" value="others">
+<span>others</span>
+
+<!-- checkBox -->
+<br><br><br><br>
+<label for="">FrontEnd:</label>
+
+<input type="checkbox" name="FrontEnd" id=""  >
+<span>HTMl<span>
+
+<input type="checkbox" name="FrontEnd" id=""  >
+<span>Css</span>
+
+<input type="checkbox" name="FrontEnd" id=""  >
+<span>Javascript</span>
+
+<input type="checkbox" name="FrontEnd" id=""  >
+<span>React</span>
+
+
+<!-- select -->
+<br><br><br><br>
+<select name="" id="">
+ 
+    <optgroup label="FrontEnd">
+        <option value="html">HTML</option>
+        <option value="CSs">CSs</option>
+        <option value="JS">JS</option>
+    </optgroup>
+
+<optgroup label="backEnd">
+    <option value="nodeJs">nodeJs</option>
+    <option value="mongodp">mongodp</option>
+</optgroup>
+
+</select>
+<br><br><br>
+
+<!-- range -->
+<input type="range" id="a" min="1" mix="100">
+<output name="x"></output>
+
+
+<br><br><br>
+    
+
+
+        <textarea name="" id="" rows="5" cols="50">
+            comment
+        </textarea>
+
+        <br><br><br>
+        <input type="submit"  value="login">
+        <br><br><br>
+
+    </fieldset>
+
+    <input type="reset">
+    </form>
+
+</body>
+</html>
